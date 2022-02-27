@@ -121,6 +121,7 @@ section .title::after{
     color: #111;
 }
 
+
 /* menu btn styling */
 .menu-btn{
     color: #4CA6FF;
@@ -132,12 +133,12 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: white;
+    background: #4CA6FF;
     right: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #4CA6FF;
+    color: white;
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -167,6 +168,8 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
+
+
 
 .home-content{
     text-align: center;
@@ -572,7 +575,7 @@ label {
 input,
 textarea {
     background-color: transparent;
-    border: 0;
+    border-radius: 5px;
     border-bottom: 2px solid #111;
 }
 
@@ -618,6 +621,7 @@ footer{
     color: #4CA6FF;
     text-align: center;
 }
+
 
 
 /* responsive media query start */
