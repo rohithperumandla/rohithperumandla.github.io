@@ -550,66 +550,107 @@ section .title::after{
 
 /* contact section styling */
 
-.contact-form {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 5%;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px 0;
-}
-
-input,
-textarea,
-label {
-    display: block;
-    margin: 0 auto;
+/* Style inputs, select elements and textareas */
+input[type=name], select, textarea{
     width: 100%;
-    color: #111;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
-input,
-textarea {
-    background-color: transparent;
-    border-radius: 5px;
-    border-bottom: 2px solid #111;
+input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
-input[type=submit] {
+input[type=reason], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=message], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+  /* Style the label to display next to the inputs */
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+  /* Style the submit button */
+input[type=submit]{
     background-color: #4CA6FF;
-    padding: 15px 0;
     color: white;
-    font-size: 18px;
-    border-bottom: none;
-    margin-top: 30px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: all .3s ease;
+    margin-left: 70%;
+    margin-top: 25px;
 }
 
-input[type=submit]:hover {
-    background: #111;
-    color: white;
+input[type=submit]:hover{
+    background-color: #111;
 }
-
-input,
-textarea {
-    color: #111;
-    font-size: 18px;
-    padding: 10px;
+  
+  /* Style the container */
+.containercontact{
+    border-radius: 5px;
+    padding: 20px;
 }
-
-input:focus,
-textarea:focus {
-    outline: 1px solid #111;
+  
+  /* Floating column for labels: 25% width */
+.col-25{
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+    margin-left: 25%;
 }
-
-
-
-
+  
+  /* Floating column for inputs: 75% width */
+.col-75{
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+    margin-right: 20%;
+}
+  
+  /* Clear floats after the columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px){
+    .col-25, .col-75, input[type=submit]{
+      width: 100%;
+      margin-top: 0;
+      float: right;
+    }
+    .col-75{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
 
 
 

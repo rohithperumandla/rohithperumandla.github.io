@@ -151,19 +151,47 @@
 
     <!-- contact section start -->
     <section class="contact-form" id="contact">
-        <div class="max-width"></div>
+        <div class="max-width">
             <h2 class="title">Contact Me</h2>
-            <form action="mail.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name"><br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email"><br>
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject"><br>
-                <label for="message">Message:</label>
-                <textarea name="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send">
-            </form>
+            <div class="containercontact">
+                <form action="https://formsubmit.co/el/mejosi" method="POST">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="name" id="name" name="name" placeholder="Your Name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="Your Email..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reason">Reason for Contact:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="reason" id="reason" name="reason" placeholder="Please Enter the Reason for your Contact">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="message">Message:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="message" id="message" name="message" style="height:200px"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
