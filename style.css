@@ -794,7 +794,7 @@ footer .name{
         content: "\f00d";
     }
     #navbar{
-        top: -100px;
+        top: 10px;
     }
     .navbar .menu{
         position: fixed;
