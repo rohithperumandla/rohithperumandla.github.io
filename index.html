@@ -19,7 +19,7 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="max-width">
             <div class="logo"><a href="#home">Perumandla Rohith Goud</a></div>
             <ul class="menu">
@@ -69,7 +69,7 @@
                 <div class="container left">
                   <div class="content">
                     <h2><strong>Chandigarh University</strong></h2>
-                    <p>B.E in Computer Science<br>(2021-2025)</p>
+                    <p>B.E in Computer Science<br>(2021-2025)<br>8.79 / 10 CGPA (till date)</p>
                   </div>
                 </div>
                 <div class="container right">
@@ -147,7 +147,7 @@
         <div class="max-width">
             <h2 class="title">Skills</h2>
             <div class="text"><strong>Programming Languages</strong></div><br class="next"><br class="next1">
-            <p class="para">C Language<br>C++<br>Python<br>SQL</p>
+            <p class="para">C Language<br>C++<br>Java<br>Python<br>SQL</p>
             <hr>
             <div class="text"><strong>Web Development</strong></div><br class="next"><br class="next1">
             <p class="para">HTML<br>CSS<br>JavaScript<br>Bootstrap</p>
@@ -168,43 +168,17 @@
         <div class="max-width">
             <h2 class="title">Contact Me</h2>
             <div class="containercontact">
-                <form action="https://formspree.io/f/moqrzznn" method="POST">
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="name">Name:</label>
-                        </div>
-                        <div class="col-75">
-                            <input name="name" type="name" id="name" placeholder="Your Name..">
-                        </div>
+                <form class="contact-form" action="https://formspree.io/f/xjvdwnzl" method="POST">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="email">Email:</label>
-                        </div>
-                        <div class="col-75">
-                            <input name="email" type="email" id="email" placeholder="Your Email..">
-                        </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" required></textarea>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="reason">Reason for Contact:</label>
-                        </div>
-                        <div class="col-75">
-                            <input name="reason" type="reason" id="reason"  placeholder="Please Enter your Reason for Contacting">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="message">Message:</label>
-                        </div>
-                        <div class="col-75">
-                            <input name="message" type="message" id="message" placeholder="Your Message" style="height:200px"></input>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
+                    <button type="submit">Submit</button>
+                </form>                  
             </div>
         </div>
     </section>

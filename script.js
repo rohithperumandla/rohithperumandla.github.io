@@ -58,4 +58,48 @@ $(document).ready(function(){
     });
 });
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0px";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
+
+
+
+// Get all the sections
+const sections = document.querySelectorAll('section');
+
+// Get the menu items
+const menuItems = document.querySelectorAll('.menu a');
+
+// Add an event listener to the window
+window.addEventListener('scroll', () => {
+    // Get the current scroll position
+    const currentScroll = window.pageYOffset;
+
+    // Loop through the sections
+    sections.forEach(section => {
+        // Get the top and bottom position of the section
+        const sectionTop = section.offsetTop - 50;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        // Check if the current scroll position is inside the section
+        if (currentScroll >= sectionTop && currentScroll <= sectionBottom) {
+            // Remove the active class from all the menu items
+            menuItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Add the active class to the corresponding menu item
+            const id = section.getAttribute('id');
+            const menuItem = document.querySelector(`.menu a[href="#${id}"]`);
+            menuItem.classList.add('active');
+        }
+    });
+});

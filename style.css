@@ -78,15 +78,21 @@ section .title::after{
 }
 
 /* navbar styling */
-.navbar{
+#navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 15px 0 10px 0;
     font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
+    display: block;
+    transition: top 0.3s;
+    top: -70px;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+  }
 .navbar.sticky{
     padding: 15px 0;
     background: white;
@@ -189,8 +195,7 @@ section .title::after{
 }
 
 .home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
+    font-size: 100px;
     margin-left: -3px;
 }
 .home .home-content .text-3{
@@ -548,8 +553,64 @@ section .title::after{
 }
 
 
-/* contact section styling */
 
+
+nav a.active {
+    border-bottom: 2px solid black;
+}
+  
+
+
+/* contact section styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2{
+    margin-bottom: 0px;
+}
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4CA6FF;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CA6FF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: black;
+  }
+  
 /* Style inputs, select elements and textareas */
 input[type=name], select, textarea{
     width: 100%;
