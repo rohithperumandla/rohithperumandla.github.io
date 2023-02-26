@@ -638,7 +638,7 @@ nav a.active {
     .contact-form button[type="submit"] {
       font-size: 18px;
       padding: 10px 20px;
-      background-color: black;
+      background-color: #4CA6FF;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -792,6 +792,9 @@ footer .name{
     }
     .menu-btn i.active:before{
         content: "\f00d";
+    }
+    #navbar{
+        top: -100px;
     }
     .navbar .menu{
         position: fixed;
